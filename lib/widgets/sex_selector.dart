@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
+import '../constants/constants.dart';
+
 class SexSelector extends StatelessWidget {
   final IconData icon;
   final String sext;
-  final Color colour;
 
-  SexSelector(this.icon, this.sext, this.colour);
+  SexSelector(this.icon, this.sext);
 
   @override
   Widget build(BuildContext context) {
@@ -21,10 +22,7 @@ class SexSelector extends StatelessWidget {
         ),
         Text(
           sext,
-          style: TextStyle(
-            fontSize: 18,
-            color: colour,
-          ),
+          style: kLabelTextStyle,
         ),
       ],
     );
